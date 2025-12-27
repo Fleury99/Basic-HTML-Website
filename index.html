@@ -35,6 +35,46 @@
     <link rel="shortcut icon" href="https://fleury99.github.io/Basic-HTML-Website/assets/file-html.svg" type="image/x-icon">
 </head>
 <body>
+    <header role="banner">
+        <!-- logo + navigation principale -->
+        <div class="logo">
+            <figure>
+                <img src="./assets/portfolio-preview.png" alt="logo" width="20" height="10"> <strong>your name</strong>
+            </figure>
+        </div>
+        <nav aria-label="Navigation Principale">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="./pages/project.html">/ Projects</a>
+            <a href="./pages/article.html">/ Articles</a>
+            <a href="./pages/contact.html">/ Contact</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section aria-labelledby="section-hero">
+            <h1>Frontend Developer</h1>
+            <p>html only with proper layout, no styling</p>
+        </section>
     
+        <div>
+            <section aria-labelledby="section-project">
+                <h2>Projects</h2>
+                <nav role="list" aria-label="liste de projets">
+                    <ul>
+                        <li><a href="#">HTML Only Portfolio</a></li>
+                        <li><a href="#">Calculator</a></li>
+                        <li><a href="#">Quiz App</a></li>
+                        <li><a href="#">Countdown Timer</a></li>
+                        <li><a href="#">Product Upcoming Page</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section aria-labelledby="section-experience"></section>
+
+            <section aria-labelledby="section-education"></section>
+        </div>
+
+    </main>
 </body>
 </html>
