@@ -55,13 +55,13 @@
         <a href="#main" class="skip-link">Go to the content</a>
 
         <!--sections-->
-        <section aria-labelledby="section-hero">
+        <section id="hero" aria-labelledby="section-hero">
             <h1>Frontend Developer</h1>
             <p>html only with proper layout, no styling</p>
         </section>
     
-        <div>
-            <section aria-labelledby="section-project">
+        <div class="content-wrapper">
+            <section id="projects" aria-labelledby="section-project">
                 <h2>Projects</h2>
                 <nav aria-label="projects">
                     <ul>
@@ -74,7 +74,7 @@
                 </nav>
             </section>
 
-            <section aria-labelledby="section-experience">
+            <section id="experience" aria-labelledby="section-experience">
                 <h2>Work Experience</h2>
                 <article role="article">
                     <h3>roadmap.sh</h3>
@@ -89,7 +89,7 @@
                 </article>      
             </section>
 
-            <section aria-labelledby="section-education">
+            <section id="education" aria-labelledby="section-education">
                 <h2>Education</h2>
                 <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
                 <h3><em>Courses I Took:</em></h3>
@@ -106,8 +106,10 @@
                 </ul>
             </section>
 
-            <section aria-labelledby="section-reviews">
-                <figure>
+            <section id="reviews" aria-labelledby="section-reviews">
+                <h2>Reviews from my Teachers</h2>
+
+                <figure class="review-card">
                     <!--cite peut prendre un lien comme valeur cite="fr.wikipedia.org"-->
                     <blockquote cite="#">
                         <p>Fleury X was a brillant student; always stood out with his assignments.</p>
@@ -119,7 +121,7 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure class="review-card">
                     <blockquote cite="#">
                         <p>Fleury X was a brillant student; always stood out with his assignments.</p>
                     </blockquote>
@@ -130,7 +132,7 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure class="review-card">
                     <blockquote cite="#">
                         <p>Fleury X was a brillant student; always stood out with his assignments.</p>
                     </blockquote>
